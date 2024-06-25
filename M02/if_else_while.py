@@ -3,12 +3,13 @@
 # Accept student names and GPAs and test if the student qualifies
 # for either the Dean's List or the Honor Roll.
 
-end_program = False
+continue_program = True
 
-while end_program != True:
+while continue_program:
     last_name = str(input("Enter a student's last name, or 'ZZZ' to terminate program: "))
     if last_name == 'ZZZ':
-        end_program = False
+        continue_program = False
+        break
 
     first_name = str(input("Enter a student's first name: "))
 
